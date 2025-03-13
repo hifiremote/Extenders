@@ -1,0 +1,208 @@
+0000:  8D  72  43  50  54  30  43  50  78  31  04  F0  14  2B  60  00
+0010:  75  71  90  00  25  FD  A5  67  C4  6F  00  2F  10  3C  C7  08
+0020:  C4  4F  C4  50  C4  52  C4  53  A3  06  20  05  06  00  00  00
+0030:  00  FF  14  FF  FF  FF  FF  FF  FF  FF  03  03  07  08  00  00
+0040:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  B0  D9  C9  6E
+0050:  8B  15  E6  4A  72  B0  87  F6  07  91  6F  90  87  6B  FB  8F
+0060:  7B  56  F6  03  79  7B  EB  F6  05  9D  F6  0F  0C  A6  B5  00
+0070:  6B  16  9C  00  8C  05  C6  C4  FF  AB  F6  3F  BF  9C  28  8C
+0080:  04  C6  C4  FF  B0  F6  3F  BF  76  85  80  6B  06  E6  4A  E4
+0090:  F6  07  91  F6  3F  00  8F  F6  41  C3  C9  F1  B0  F2  F6  03
+00A0:  32  7B  AF  F6  41  32  E6  EC  2A  46  E2  40  9F  E6  FB  A5
+00B0:  7F  FF  FF  76  87  80  6B  EB  F6  3E  8F  00  83  EB  8F  E6
+00C0:  95  AE  E4  80  AE  44  4C  AE  B0  4C  A6  AE  02  6B  08  A6
+00D0:  AE  02  EB  09  E6  4C  C0  46  4C  80  F6  41  C7  F6  41  83
+00E0:  E4  80  82  F6  41  DE  F6  41  CB  F6  38  1E  C6  CA  07  3A
+00F0:  C6  DA  FF  7F  1F  44  85  41  42  43  44  45  46  47  48  49
+0100:  03  77  03  A5  80  00  01  FC  00  01  FB  00  01  F9  00  01
+0110:  F8  00  01  2A  0B  7E  FE  7D  E2  80  1C  00  05  04  09  02
+0120:  03  01  08  07  12  60  61  62  63  06  0B  22  0C  0E  15  21
+0130:  06  34  00  BC  FE  FE  FD  3D  33  7B  BB  3B  DB  5B  9B  1B
+0140:  EB  6B  67  E7  2F  CF  4F  96  3F  CC  13  67  E7  57  D7  93
+0150:  C3  37  E3  73  3C  83  43  6C  1C  9F  1F  5A  00  FE  E2  71
+0160:  20  FD  0A  00  A7  B7  8F  87  00  00  00  00  00  67  5F  0F
+0170:  3F  7F  C7  A7  67  5F  7F  3F  B7  BF  7F  3F  9F  9C  00  FE
+0180:  FE  FF  B8  EC  B8  3C  B8  DC  B8  5C  B8  38  B8  AC  B8  CC
+0190:  B8  4C  B8  8C  B8  84  B8  70  B8  B0  B8  F0  C8  94  C8  54
+01A0:  B8  7C  C8  FA  C8  3A  C8  DA  C8  01  B8  44  B8  F8  B8  B4
+01B0:  B8  6C  C8  4C  C8  E4  C8  14  C8  A4  C8  64  C8  04  C8  CC
+01C0:  B8  C8  B8  58  DE  08  3E  FE  FE  FD  58  92  00  8C  0C  A8
+01D0:  4C  9C  44  C4  1C  68  D8  9E  5E  DE  3E  70  D0  A6  2A  7C
+01E0:  58  D0  0A  34  14  84  04  5A  00  FE  FE  9A  F1  20  7C  DD
+01F0:  7F  74  70  6F  75  7B  87  76  7C  88  9D  9C  91  85  80  9E
+0200:  8E  89  84  72  78  8A  7E  77  7D  83  82  86  86  81  7A  8C
+0210:  7E  71  00  00  01  C6  4C  00  00  56  99  03  F6  0B  5D  02
+0220:  43  A6  C4  12  EB  26  B0  C0  18  6C  76  C1  80  6B  06  56
+0230:  C1  7F  E6  99  02  96  0A  C0  19  05  09  06  B0  6C  96  0A
+0240:  6C  E4  6D  03  E4  6C  04  F6  1E  BA  8B  03  F6  0F  A9  C6
+0250:  CA  00  4C  C6  DA  FF  00  1F  44  85  00  00  01  38  3A  3A
+0260:  0B  A6  95  9A  3B  08  87  43  2C  82  95  C4  3A  F3  AF  00
+0270:  00  01  08  03  18  03  F6  01  0D  AF  00  00  01  00  00  F0
+0280:  2D  E4  2D  4A  56  4A  0F  F6  07  91  56  03  07  38  3A  26
+0290:  C3  03  90  2D  E6  83  01  7B  11  F6  3E  AD  FB  18  76  87
+02A0:  20  6B  F6  8B  15  F6  3E  AD  7B  10  B0  87  E6  F1  FF  6F
+02B0:  90  87  7B  F1  6B  F9  38  03  B0  03  A4  03  C3  2B  0D  87
+02C0:  43  2D  A6  95  9A  3B  05  82  95  C4  3A  EE  AF  00  00  01
+02D0:  C6  CA  00  F7  C6  CC  00  2D  EC  09  F6  07  AB  E6  B5  01
+02E0:  AF  40  9A  41  8B  0D  00  05  35  01  A8  00  DC  00  00  00
+02F0:  00  00  C3  76  03  02  6B  08  76  00  01  6B  03  B6  06  80
+0300:  76  03  01  6B  0B  56  03  FE  76  00  01  6B  03  46  03  01
+0310:  1C  12  F6  01  4C  38  03  F6  FF  7A  F6  FF  55  B0  C6  87
+0320:  36  04  F6  FF  7E  6E  37  64  F6  C6  F8  88  00  F6  01  58
+0330:  F6  01  0A  7B  DB  AF  76  03  01  6B  0B  F6  FF  70  F6  FF
+0340:  70  F6  FF  75  8B  10  1C  1A  F6  FF  75  F6  FF  75  F6  FF
+0350:  70  1C  16  8D  01  4C  1C  1A  8D  01  4C  4C  04  8B  02  4C
+0360:  08  37  3F  08  F6  FF  75  F6  FF  70  8B  06  F6  FF  70  F6
+0370:  FF  75  90  C3  4A  EB  AF  00  0B  0F  08  CC  4F  CC  50  CC
+0380:  52  CC  53  0C  F0  14  2B  C4  6F  A5  67  25  FD  75  71  01
+0390:  04  01  07  01  0A  01  0D  01  10  01  13  01  31  01  5B  01
+03A0:  7D  01  C4  01  E7  00  06  01  80  01  FC  01  FB  01  F9  01
+03B0:  F8  01  2A  02  12  02  5A  02  6F  02  7A  02  CD  02  E1  01
+03C0:  9F  00  07  01  80  01  FC  01  FB  01  F9  01  F8  01  2A  00
+03D0:  47  01  E6  02  2E  02  43  02  4E  02  A1  02  B5  03  4B  B0
+03E0:  02  C4  03  5A  97  02  A2  02  F5  03  09  FF  FF  FF  FF  FF
+03F0:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+0400:  00  0C  03  04  F0  49  2F  03  04  F0  0F  25  03  04  F0  0D
+0410:  26  03  04  F0  1D  27  03  04  F0  10  28  03  04  F0  11  86
+0420:  23  14  2B  47  87  23  14  2B  A7  30  23  14  2B  53  25  23
+0430:  14  2B  7C  26  23  14  2B  9C  27  23  14  2B  EC  28  23  14
+0440:  2B  AC  2B  23  14  2B  2C  14  E3  C4  6F  8F  25  A3  25  FD
+0450:  F0  26  A3  25  FD  26  27  A3  25  FD  C6  28  A3  25  FD  5A
+0460:  9F  C4  A5  67  C8  AE  95  C4  A5  67  C8  0E  96  C4  A5  67
+0470:  C8  F6  97  C4  A5  67  C8  76  99  C4  A5  67  C8  82  9A  C4
+0480:  A5  67  C8  B6  9B  C4  A5  67  C8  36  9C  C4  A5  67  C8  D6
+0490:  9D  C4  A5  67  C8  66  84  C4  A5  67  C8  4E  85  C4  A5  67
+04A0:  C8  8E  86  C4  A5  67  B8  21  87  C4  A5  67  B8  C1  13  C4
+04B0:  A5  67  B8  04  14  C4  A5  67  C8  7A  37  C4  A5  67  B8  48
+04C0:  A0  C4  A5  67  C8  26  98  C4  A5  67  C8  C6  30  C4  A5  67
+04D0:  C8  92  3A  C4  A5  67  B8  D8  3B  C4  A5  67  B8  98  3C  C4
+04E0:  A5  67  B8  A9  25  C4  A5  67  D8  56  26  C4  A5  67  D8  96
+04F0:  27  C4  A5  67  D8  46  28  C4  A5  67  C8  46  2B  C4  A5  67
+0500:  C8  86  2F  C4  A5  67  D8  E6  8F  03  C4  50  55  3D  09  C4
+0510:  52  31  3E  6E  20  A7  68  3E  3E  03  C4  4F  BD  3D  A9  C4
+0520:  52  31  3E  6E  19  A5  6D  3E  3E  A3  C4  4F  BD  3D  88  C4
+0530:  52  31  3E  6E  16  6C  3E  3E  83  C4  4F  BD  3D  E8  C4  52
+0540:  31  3E  6E  1D  6F  3E  3E  EA  C4  4F  6E  7D  7E  6F  79  7B
+0550:  7C  7F  3D  29  C4  52  31  3E  6E  1C  A5  69  3E  3E  23  C4
+0560:  4F  BD  3D  69  C4  52  31  3E  6E  1B  A6  6B  3E  3E  63  C4
+0570:  4F  BD  3D  49  C4  52  31  3E  6E  1A  A5  6A  3E  3E  43  C4
+0580:  4F  BD  3D  C7  C4  52  31  3E  6E  17  3E  3E  C3  C4  4F  BD
+0590:  2C  3A  16  AC  00  00  00  1A  AC  00  00  00  1C  AC  00  00
+05A0:  00  1E  AC  00  00  00  15  8F  15  AC  00  16  8F  1F  AC  00
+05B0:  16  8F  1B  AC  00  17  8F  16  AC  00  17  8F  1D  AC  00  1A
+05C0:  8F  1F  AC  00  A5  18  68  8F  20  8F  16  18  8F  18  A6  18
+05D0:  68  8F  20  8F  17  18  8F  18  A7  18  68  8F  20  8F  1A  18
+05E0:  8F  18  A8  1A  8F  8F  8F  8F  8F  8F  8F  8F  8F  8F  AC  18
+05F0:  8F  0C  8F  15  8F  18  8F  18  BD  16  79  7B  7C  7D  7E  7F
+0600:  83  1F  68  03  6E  03  68  A8  A8  A8  A8  A8  A7  6E  20  68
+0610:  BD  01  12  68  3D  21  12  6D  3D  09  12  69  3D  0A  12  6C
+0620:  3D  23  13  6F  3D  E3  11  13  6B  3D  D1  12  13  6A  3D  D2
+0630:  22  12  6E  3D  24  1A  6D  79  7B  7C  6E  7D  68  7E  70  7F
+0640:  D1  6B  C4  53  56  49  44  45  4F  41  55  58  20  E3  EB  C4
+0650:  53  4D  50  33  20  20  4E  45  4F  20  D2  4B  C4  53  56  49
+0660:  44  45  4F  47  41  4D  45  2C  63  75  71  73  25  63  75  71
+0670:  73  00  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+0680:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+0690:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+06A0:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+06B0:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+06C0:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+06D0:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+06E0:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+06F0:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+0700:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+0710:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+0720:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF
+0730:  FF  FF  FF  FF  FF  FF  FF  FF  FF  FF  C6  C2  44  85  70  C3
+0740:  70  C2  C6  C2  07  3A  70  C2  70  C3  C6  C2  34  28  70  C3
+0750:  70  C2  79  82  56  82  3F  18  6E  37  18  05  18  74  F6  1D
+0760:  3A  19  7F  C6  CA  03  02  02  BE  16  CA  00  F6  16  04  72
+0770:  00  6D  02  AF  22  07  EB  EF  CE  96  20  C0  37  09  4F  A4
+0780:  7F  C1  EB  E3  09  3A  C6  DA  3A  FA  1F  17  BC  09  83  93
+0790:  95  C7  72  77  6B  26  18  C7  66  C1  7F  EB  07  B0  B5  E4
+07A0:  6E  7E  8B  15  26  C1  79  1B  07  08  6E  97  01  6F  8B  09
+07B0:  18  C7  26  C1  68  1B  83  19  6E  E6  D9  FE  0C  AF  24  95
+07C0:  C0  BB  CA  C6  CA  00  4C  C6  DA  FF  00  1F  44  85  26  CE
+07D0:  02  1A  17  56  89  0F  C8  89  86  05  CC  20  89  A2  DE  9B
+07E0:  F2  02  BD  12  AC  EC  05  E4  75  6E  D8  95  22  DE  A6  CD
+07F0:  9A  7D  FF  35  F6  41  C7  A0  CA  A0  CA  D9  95  8D  09  3E
+
+[Notes]
+$0000=Factory reset remote before install.  Remove batteries; hold set; push record; push select twice.®
+$1000=-
+$1001=audio
+$1002=pop/bpe
+$1003=pip sel
+$1004=pict
+$1005=wide
+$1006=DiscreteON
+$1007=DiscreteOFF
+$1008=Timer
+$1009=Prog
+$100A=Date +
+$100B=Start +
+$100C=Stop +
+$100D=Stop -
+$100E=Menu
+$100F=Clear
+$1010=Audio Select
+$1011=Subtitle Select
+$1012=Surround Select
+$1013=ZONE2 DBS
+$1014=ZONE 2 PHONO
+$1015=ZONE 2 CD
+$1016=ZONE2 TUNER
+$1017=ZONE2 DVD
+$1018=ZONE 2 VDP
+$1019=ZONE 2 V.AUX
+$101A=ZONE 2 VCR-1
+$101B=ZONE2 VCR-2
+$101C=ZONE 2 VOLUME UP
+$101D=ZONE 2 VOLUME DOWN
+$101E=MULTI ZONE2 ON
+$101F=MULTI ZONE2 OFF
+$1020=ON SCREEN
+$1021=SURROUND PARAMETER
+$1022=SPEAKER
+$1023=ZONE2 TV
+$1024=ZONE2 CDR/TAPE
+$1025=INPUT MODE
+$1026=STANDARD(DOLBY/DTS SURR.)
+$1027=DSP SIMULATION
+$1028=PURE DIRECT
+$1029=CINEMA MODE
+$102A=MUSIC MODE
+$102B=ROOM EQ
+$102C=STEREO
+$102D=DIRECT
+$102E=NIGHT MODE
+$102F=shift pause key delay.
+$1030=LKP set RCVR input to TV (aka TV) / TV to HDTV reception
+$1032=LKP set RCVR input to DVD (aka DVD) / TV to HDMI input
+$1034=LKP set RCVR input to CD (aka DVD analog audo)
+$1036=LKP set RCVR input to VCR 2 input (aka MP3 Player)
+$1037=set OTHER and PIP keys for RCVR in AUX device mode
+$1038=LKP set RCVR input to VCR 1 input (aka VCR)
+$103A=LKP set RCVR input to Vid. Aux. (aka computer digital outputs) / TV to HDMI #2 input
+$103C=LKP set RCVR input to VDP (aka Play Station) / TV to HDMI #1 input
+$103E=LKP set RCVR input to FM tuner
+$1040=favorite channel advance
+$1041=Select HDMI #1 input on TV
+$1042=Select HDMI #2 input on TV
+$1043=Select HDTV reception on TV
+$1044=SHIFT-Pause X 10 delay
+$1045=Dell TV digital channel favorites macro
+$1046=Device key common setup macro for SKP
+$1047=RCVR / TV power on macro set RCVR to TV audio input, set TV to HDTV mode
+$1051=Display VIDEO AUX
+$1052=Display MP3  NEO
+$1053=Display VIDEO GAME
+$1054=EAX
+$1055=EAX
+$3005=Dell 4200HD (RM v1.49)
+$3006=JVC HR-3500U (RM v1.49)
+$3007=Neo35 MP3 Player (RM v1.49)
+$3008=Denon AVR2807 from scratch with Denon codes (RM v1.49)
+$3009=Sony DVP-NC685V DVD Player (RM v1.49)
+$300A=Creative RM-1000W (RM v1.49)
+$4005=RC6-6-32 (RM v1.49)

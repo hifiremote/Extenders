@@ -1,0 +1,33 @@
+USE AT YOUR OWN RISK.
+FOR USE WIHT THE RCA-RCRP05B with signature 31793179 ONLY.  
+
+As a precaution use fresh batteries when activating the phantom LEDs.  
+Add the upgrade and protocol shown below. Assign it to a device button and then press
+Ch+ to activate the Phantom LEDs.  Ch- will turn off the Phantom LEDs.
+
+This patch only needs to be applied once.  You can remove the device and protocol from your
+IR file.  
+
+dev4 will light the DVD/VCR LED
+dev5 will light the CBL/SAT LED
+dev6 will light the DVR/AUX LED
+
+The change will persist through E2 changes, battery changes, even factory resets. 
+To undo the change reload the Device and protocol and press Ch-.
+
+
+Upgrade Code2 0 = 14 54 (TV/1108) CH+ Activate phantom LEDs
+01 FF 00 21 01 00
+End 
+
+Upgrade protocol 0 = 01 FF (S3C8+) RCA RCRP05B LED PATCH (PB v4.01)
+ 00 00 01 C6 CC 42 D5 C6 BE 00 03 C6 CA FF 1B A6 
+ 03 00 EB 04 C6 CA FF 1E 8D FF 21 02 04 80 10 20 
+ 40 B0 C6 78 CD 56 C7 7F 56 CD 80 C4 CC C0 C6 C2 
+ FE 80 C6 C4 00 80 F6 04 4C C4 CA C0 C4 C6 C2 06 
+ C3 80 16 C2 FE C4 BE C4 C4 C2 C6 04 BF C7 14 BE 
+ C6 26 C7 00 36 C6 00 5B 18 EB 04 42 77 6B 12 C4 
+ BE C4 22 57 32 46 F6 FF 71 C4 C0 CA C4 C6 BE 8B 
+ B0 F6 04 4C F6 48 B2 C6 BE 00 80 C6 CA FE 80 8D 
+ 48 C6
+End

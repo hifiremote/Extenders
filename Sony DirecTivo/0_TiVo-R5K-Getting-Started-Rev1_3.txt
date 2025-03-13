@@ -1,0 +1,300 @@
+Getting Started in JP1 with Sony TiVo/DirecTiVo and ReplayTV 5000 Remotes
+
+  Rev. 1.3  June 12, 2003 by Hal Takahara
+
+
+Overview
+========
+
+The remotes covered in this guide, Sony RMT-V303, RM-Y809 and the
+ReplayTV 5000 remote, are not originally designed to be universal
+remotes, and you need to install one of the extender programs to
+make it work as one.  For the same reason, these remotes do not have
+much in their code libraries, and it is very likely that you need to
+add the device codes for most of your devices except for the PVR that
+the remote came with.
+
+It'll work as a 12 device remote with macro capability once you
+configure the remote.  (Actual number of devices are subject to size of
+the EEPROM and each device upgrade.)
+
+  - The TV Power button (R5K, SA TiVo) or the SAT Power button (DirecTiVo)
+    works as the Shift key.
+
+  - Shift-0 .. Shift-9 work as the device buttons.  You can make any
+    button to work as a device button.  (There are two more device
+    indexes that are not pre-assigned to any buttons.  You can assign
+    them easily by defining macros that includes the device selection
+    commands.)
+
+  - You can define macros to control power, input selection, etc. with
+    a single key press.  There are no forced delays between commands
+    in the macros, and macros can be nested.
+
+
+What You Need to Get First
+==========================
+
+System Requirements
+-------------------
+
+Windows PC with DB-25 parallel port (No USB, serial port support) MS
+Excel 97 or above, the Analysis Toolpak installed.  The macro
+capability of Excel must be enabled.
+
+JP1 Cable
+---------
+
+Build or buy one.  See the Simple Interface folder in the files
+section for the instructions to build one, or see the Database section
+for the sellers of pre-built cables.  For uses with a low voltage PC,
+consider using a Schottky diode (BAT83, 1N5818, etc. not available at
+Radio Shack) instead of 1N4148.
+
+JP1 Connector (Sony TiVo/DirecTiVo Remotes Only)
+------------------------------------------------
+
+You have to solder on 6 wires and add the JP1 connector.  See
+the instruction document in the Hardware folder.
+
+JP1 Tools and Extender
+----------------------
+
+Download the following packages in the files section:
+
+Form the Tools folder:
+
+  - keymap-master.zip: Keymap Master spreadsheet (a.k.a. KM)
+  - IR???.zip: IR.exe package (??? is the version number)
+
+From the Extenders folder:
+
+  - The extender for your remote.  Use the version 2 if you have
+    upgraded the EEPROM in your remote (Sony TiVo/DirecTiVo remotes)
+    and version 1 otherwise.
+
+
+Creating/Adding Upgrades
+========================
+
+Finding Codes
+-------------
+
+Follow the steps below to find the codes for your devices.
+
+1. Look for the KM file for you devices in the Device Codes folder in
+   the files section.  The TiVo/DirecTiVo/ReplayTV upgrades are in the
+   PVR sub-folder.
+
+   *Note: If you are going to control multiple non-Sony TiVo, get the
+    one based on the "Hacked TiVo protocol" (NOT the one based on the
+    NEC protocol.)
+
+You need to create the KM file from scratch if you can't find anything
+close to your device.  The following information is needed to do so:
+
+  - The protocol name
+  - The device number
+  - In some cases, additional parameters
+  - The command code (often expressed in different forms - EFC, OBC or Hex)
+
+In general, all the signals from one remote use the same protocol and
+only one or two different device numbers, and each different command
+code per function.  Combo devices, such as TV-VCR/DVD combo,
+mini-systems often use multiple device numbers/protocols.  In this
+case, you may need to use a "combo" protocol or the Device Combiner
+protocol to make it as a single upgrade.
+
+2. See if the web sites listed the IR code libraries folder in the
+   Links section have the codes for your device.
+
+3. If you have a JP1 compatible leaning remote, learn the signals from
+   the remote, download the image with IR.exe, and see the Learned
+   Signals tab if it shows the information you need.  (Try the new
+   decoder DLL with the special version of IR.exe if the regular
+   IR.exe cannot decode it.)
+
+4. Look for the Philips Pronto CCF file for your device in the Remote
+   Central web site (files section), and use the ccf2efc program to
+   extract the necessary information.
+
+The code lists on the www.hifi-remote.com site may be also useful if
+you are looking for the command codes to try.
+
+Creating Upgrades
+-----------------
+
+1. Open the KM. (Make sure that the macros can run. Be aware of the
+   security level.)
+
+2. If you have a KM .txt file to start with, click on the [Load]
+   button and choose the file.  Click on the [New] button to start
+   over.
+
+3. On the [Setup] sheet,
+
+Remote: Change this to your remote
+
+Device Type: You can leave it as is, or change it to any type. It
+  doesn't have to match what your device actually is.  What it does is
+  just picking the button layout - some buttons become available/not
+  available depending on the type you choose here.  Change it to
+  whatever you like.
+
+Setup Code: This can be anything, too. I'd recommend to make it the
+  same as the UEI code if it is known and not built-in, or add 1000 if
+  it's unused, etc. Just pick the code so every "Device Type"/"Setup
+  Code" combination is unique.
+
+Button Codes: Choose either OBC or EFC command code style depending on
+  the command codes you've got.  Never mind for now if you are not
+  sure.  (Only either code style is available in some protocols)
+
+If you are creating this upgrade from scratch, fill in the Protocol
+ID, main/sub device numbers accordingly.  (In some cases, you may also
+need to specify the Param.)  Read the protocol read me file comes with
+KM to see the protocol specific information and the combo/combiner
+protocols.
+
+Unit Code (ReplayTV and Non-Sony TiVo): Specify the ReplayTV unit
+  code/TiVo remote address here (To change the remote address for a
+  Sony SA/DirecTiVo, see the instructions comes with the KM .txt file
+  in the PVR folder.)
+
+  *** To change the code on the PVR side:
+
+    ReplayTV:  http://www.avsforum.com/avs-vb/showthread.php?s=5dca23cdeacfc45487b7a69b7baea00d&threadid=253263
+
+    TiVo: http://customersupport.tivo.com/tivoknowbase/root/public/tv1087.htm
+
+
+4. On the Functions sheet, fill in the command codes.  Add new entries
+   as needed.  Read the protocol read me file to see how you specify
+   the main/sub device for each command.
+
+5. On the Buttons sheet, change the assignment of the functions on
+   each button as you like.
+
+6. Go back to the Setup sheet and click on the [Save] button to save
+   the work.
+
+Adding Upgrade Codes
+--------------------
+
+1. Open the EEPROM image (the initial extender image included in the
+   extender package if you are just starting from the scratch.  See
+   the Install.txt) with IR.exe.
+
+2. Open KM and load the device file you created, and then click on the
+   icon near the "Device Upgrade Code" area.  Go to the Devices tab in
+   IR.exe, click on the [Add] button, and then press Ctrl-V to paste
+   it.  Check if the Type and the Setup Code are correct.  In case of
+   those remotes, all the device types other than TV are mapped to the
+   same device type.  For example, you would see VCR here even if you
+   chose DVD in KM, etc.  Click on the [OK] button.
+
+3. If KM is showing the message: "The Protocol Code is Required",
+   check the Protocols tab in IR.exe if you have already added the
+   same protocol for other device.  If you haven't, click on the icon
+   near the "Protocol Code" area just below the "Device Upgrade Code"
+   area.  Go to the Protocols tab in IR.exe, click on the [Add]
+   button, and then press Ctrl-V to paste it.  Click on the [OK] button.
+
+   *** Caution on the Device Combiner: the Protocol Upgrade code for
+   the Device Combiner includes sets of the fixed data you specified
+   on the Setup sheet, and it is different for every Device Combiner
+   upgrade you crate.  Create a single consolidated Device Combiner
+   protocol code that includes all sets of fixed data you need, and
+   share it across all the device upgrades that use the Device
+   Combiner.
+
+Repeat the above steps for all the devices.
+
+Assigning Setup Codes to Device Buttons
+---------------------------------------
+
+Go to the General tab in IR.exe and choose combination of Type and
+Code for each Device button.
+
+Go to the Macros tab in IR.exe.  There are device selection macros
+pre-defined on Shift-0 .. Shift-9.  Each device button name (= device
+index) corresponds to the device selection commands (V_, O_ and X_:
+V_TV, O_VCR, etc.)  Use a V_ command to specify the device for the
+volume buttons and use an O_ command for the other buttons.  The X_
+commands overrides the V_ and O_ commands and take effects only within
+macros.  Volume keys are punched through to the TV device in the
+pre-defined macros for some devices.  Modify them or add new macros
+for AUX5/6 as necessary.  Read the ReadMe.txt included in the extender
+for more details.
+
+
+************************************************************************
+Save your work so far with the menu: [File] -> [Save] or [Save As...]
+At this point, you may want to upload and try the image before start
+working on macros, etc.
+************************************************************************
+
+Uploading Image and Activating Extender
+=======================================
+
+1. Upload the image with IR.exe.  The LED should blink twice.
+
+2. Press the activation key:
+
+  Sony TiVo/DirecTiVo remote: TV Power
+  ReplayTV 5000 remote: ReplayTV Power
+
+The LED should blink 4 times.
+
+3. The initial device selection is non-deterministic make sure to
+press one of the buttons with the device selection macros.  For
+example, press Shift-2 to choose the TiVo/ReplayTV, and the remote is
+ready to use.
+
+
+Repeat 2. and 3. to reactivate the extender after:
+
+  - Uploading the image
+
+  - Replacing the batteries
+
+  - The remote resets itself (weak batteries, connecting/disconnecting
+    the JP1 cable can cause reset.)
+
+
+Defining Macros
+===============
+
+In IR.exe, go to the Macros tab and add a macro on a button of your
+choice if you would like the macro to be executed regardless of the
+current device.
+
+Use the Device Specific Macros feature (DSM) if you would like the
+macro to be executed only in a specific device.  To define a DSM, go to
+the Key Moves tab in IR.exe, and create a key move with the setup code
+TV/1103.  Specify the key codes in hexadecimal numbers as the Hex
+Cmd.  (Make sure that the Hex Cmd is selected instead of EFC.)  Key
+codes are listed in the KeyCodes.htm and the RDF.
+
+  *Note: Use the Extender Code Calculator spreadsheet in the Extenders
+   folder for easier DSM programming.  It calculates the code for
+   ToadTog and Long/Double Key Press macros if you use the extender
+   version 2.
+
+In order to use a command in macros, the command has to be assigned to
+a button (either a physical button or the one that doesn't physically
+exist - we call it a "Phantom key") first.
+
+  In the Extender 2 (as well as the regular JP1 remotes), you can just
+  create a key move on it (the setup code used in that button does NOT
+  have to be tied to any device indexes.)
+
+  In the Extender 1, the setup code must be assigned to one of the
+  device indexes since this extender does not support regular key
+  moves.  Also, the commands must exist in the key map (i.e. Must be
+  assigned to buttons in KM, not as key moves.)  Phantom keys can be
+  used to hold macros using other keys, but not to hold direct
+  commands with setup codes.
+
+See the Device Specific Macros.txt included in the extender package
+for more information about DSM.

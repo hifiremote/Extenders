@@ -1,0 +1,493 @@
+RMIR v2.12.8
+Incorporates Girr v2.2.9
+Girr Commit Id: ffb8129
+Incorporates IrpTransmogrifier v1.2.8
+IrpTransmogrifier Commit Id: 438b283
+System Properties:
+   java.version = 15.0.2
+   java.vendor = Oracle Corporation
+   os.name = Windows 10
+   os.arch = amd64
+   java.home = C:\Program Files\Java\jdk-15.0.2
+   java.class.path = RemoteMaster.jar
+
+Loading protocols from 'C:\RMIR.v2.12.8-bin\protocols.ini'
+Option to include Slingbox protocols is Off
+
+libraryFolder=C:\RMIR.v2.12.8-bin\Windows-amd64
+LibraryLoader: Attempting to load 'jp12serial' from 'C:\RMIR.v2.12.8-bin\Windows-amd64\jp12serial.dll'...
+LibraryLoader: Loaded 'jp12serial' successfully from 'C:\RMIR.v2.12.8-bin\Windows-amd64\jp12serial.dll'
+    JP12Serial version 0.25
+LibraryLoader: Attempting to load 'hidapi' from 'C:\RMIR.v2.12.8-bin\Windows-amd64\hidapi.dll'...
+LibraryLoader: Loaded 'hidapi' successfully from 'C:\RMIR.v2.12.8-bin\Windows-amd64\hidapi.dll'
+    CommHID version 1.2
+Loading internal library JP2BT
+    JP2BT version 1.2
+LibraryLoader: Attempting to load 'jp1usb' from 'C:\RMIR.v2.12.8-bin\Windows-amd64\jp1usb.dll'...
+LibraryLoader: Loaded 'jp1usb' successfully from 'C:\RMIR.v2.12.8-bin\Windows-amd64\jp1usb.dll'
+    JP1USB version 0.04
+Loading internal library JPS
+    JPS version 0.1
+LibraryLoader: Attempting to load 'jp1parallel' from 'C:\RMIR.v2.12.8-bin\Windows-amd64\jp1parallel.dll'...
+LibraryLoader: Loaded 'jp1parallel' successfully from 'C:\RMIR.v2.12.8-bin\Windows-amd64\jp1parallel.dll'
+    JP1Parallel version 0.12
+    JP1Parallel InpOutDriver is not open
+    *** To use the parallel port interface, RMIR must be run once as adminstrator.
+    This enables it to install the InpOut driver, a once-only task needed for
+    the interface to access the port.
+Using DecodeIR to decode Learned Signals
+DecodeIR: Looking in 'C:\RMIR.v2.12.8-bin'.
+LibraryLoader: Attempting to load 'DecodeIR' from 'C:\RMIR.v2.12.8-bin\Windows-amd64\DecodeIR.dll'...
+LibraryLoader: Loaded 'DecodeIR' successfully from 'C:\RMIR.v2.12.8-bin\Windows-amd64\DecodeIR.dll'
+Using IrpTransmogrifier as decoder of learned signals
+Starting normal download
+Interface Name = NULL
+Port Name = NULL
+Testing interface: JP1.X Serial
+Port Name = COM4
+Opened on Port COM4
+Opened interface type 5
+Interface opened successfully
+Base address read from remote = $600
+Searching for RDF
+Final signature sought = 30333033
+ERROR: ButtonMap 0 includes unknown keycode $3f, Creating button!
+ERROR: ButtonMap 0 includes unknown keycode $26, Creating button!
+ERROR: ButtonMap 0 includes unknown keycode $27, Creating button!
+ERROR: ButtonMap 0 includes unknown keycode $3f, Creating button!
+ERROR: ButtonMap 0 includes unknown keycode $26, Creating button!
+ERROR: ButtonMap 0 includes unknown keycode $27, Creating button!
+Remote identified as: Atlas OCAP URC-1056 JP1.3 (Black)
+Number of bytes read  = $1400
+Ending normal download
+Data parsing started
+Decoding settings
+Decoding upgrades
+
+Setup code=Cable/2004
+DeviceUpgrade.importRawUpgrade
+  hexCode=01 2A 07 2E FE 3E EA C0 00 61 A9 32 95 55 5A 96 55 95 0D 0E 54 1A 16 17 18 19 50 11 1B 52 28 84 21 25 20 22 24 23 51 53 85 80 27 26
+  newRemote=Atlas OCAP URC-1056 JP1.3 (Black)
+  newDeviceTypeAliasName=Cable
+  pid=01 2A
+  pCode=null
+Checking protocol "MCE" (01 2A : 2)
+Imported fixedData is A9 32 95 55 5A 96 55 95
+Imported device parms are: 8 57
+Calculated fixedData is A9 32 95 55 5A 96 55 95
+It's a match!
+Checking protocol "RC6-M-32" (01 2A : 2)
+Imported fixedData is A9 32 95 55 5A 96 55 95
+Imported device parms are: 128 14600 6 0 2
+Calculated fixedData is A9 32 95 55 5A 96 55 95
+It's a match!
+And protocol code is identical but better match on OEM or Parm parameters (variance 0 instead of 42)
+Calculating default fixed data and command lengths
+Calculated: Fixed data length = 8, Command length = 1
+Using "RC6-M-32" (01 2A : 2)
+
+Setup code=CD/1010
+DeviceUpgrade.importRawUpgrade
+  hexCode=01 1A 00 FE EE FC 0E F1 B4 BF B4 C9 B4 49 B4 CA 84 20 54 20 94 20 14 20 E4 20 64 20 A4 20 24 20 C4 20 44 20 BF A1 3F A1 5F A0 FF A1 7F A1 2C 60 57 A0 97 A0 A7 A0 67 A0 37 A0 CD 60 55 60 35 60 BE A1 3E A1 DE A1 5E A1 16 A0 D5 60 1E E0 45 A0 16 A0 36 A0 F4 E0 D6 A0 4F A0 EE 60
+  newRemote=Atlas OCAP URC-1056 JP1.3 (Black)
+  newDeviceTypeAliasName=CD
+  pid=01 1A
+  pCode=null
+Checking protocol "NEC 4DEV Combo" (01 1A : 2)
+Imported fixedData is B4 BF B4 C9 B4 49 B4 CA
+Imported device parms are: 210 2 210 108 210 109 210 172 0
+Calculated fixedData is B4 BF B4 C9 B4 49 B4 CA
+It's a match!
+Calculating default fixed data and command lengths
+Calculated: Fixed data length = 8, Command length = 2
+Using "NEC 4DEV Combo" (01 1A : 2)
+
+Setup code=DVD/2000
+DeviceUpgrade.importRawUpgrade
+  hexCode=00 DE 0A 3E CE FE C6 02 F5 58 47 00 6A EA A8 58 98 D8 38 18 34 9C 5C DC 3C BC 42 C2 68 6E 94 FC F0 94 C6 26 A6 07 0E 42
+  newRemote=Atlas OCAP URC-1056 JP1.3 (Black)
+  newDeviceTypeAliasName=DVD
+  pid=00 DE
+  pCode=null
+Checking protocol "Sony20" (00 DE)
+Imported fixedData is 58 47 00
+Imported device parms are: 26 226 0
+Calculated fixedData is 58 47 00
+It's a match!
+Calculating default fixed data and command lengths
+Calculated: Fixed data length = 3, Command length = 1
+Using "Sony20" (00 DE)
+
+Setup code=CD/1135
+DeviceUpgrade.importRawUpgrade
+  hexCode=00 B6 00 FE FE FC 3E FE F9 B4 BF 84 BF 54 BF 94 BF 14 BF E4 BF 64 BF A4 BF 24 BF C4 BF 44 49 BF 49 3F 49 5F 49 FF 49 7F C9 2C BF 4E BF 76 BF 7E BF FE BF 8E C9 E7 49 6F BF 86 BF D6 BF FC BF 7C BF BC BF 3C BF DC BF 9E BF 96 BF B6 BF 36 49 45 49 16 C9 55 67 FC BF 9E 49 9D BF 86 BF 86 BF 16 C9 CE 49 06 49 8F 49 2F CA AE BF 56
+  newRemote=Atlas OCAP URC-1056 JP1.3 (Black)
+  newDeviceTypeAliasName=CD
+  pid=00 B6
+  pCode=null
+Checking protocol "NEC1 Combo" (00 B6)
+Imported fixedData is B4
+Imported device parms are: 210
+Calculated fixedData is B4
+It's a match!
+Calculating default fixed data and command lengths
+Calculated: Fixed data length = 1, Command length = 2
+Using "NEC1 Combo" (00 B6)
+
+Setup code=DVD/1234
+DeviceUpgrade.importRawUpgrade
+  hexCode=00 5A 00 FE CE EC 02 C5 20 CC 47 6D 7D 5D 4D BD 9D 8D 3D 1D 0D 8F BF CF CD CD FF 77 77 9F AF AD FD 1F DD F7 B7 77 AD 0F 3F AF 9F ED
+  newRemote=Atlas OCAP URC-1056 JP1.3 (Black)
+  newDeviceTypeAliasName=DVD
+  pid=00 5A
+  pCode=null
+Checking protocol "NEC1" (00 5A)
+Imported fixedData is 20 CC 47
+Imported device parms are: 204 29 0 0 0
+Calculated fixedData is 20 CC 47
+It's a match!
+Checking protocol "NEC2" (00 5A)
+Imported fixedData is 20 CC 47
+Imported device parms are: null null 0
+Calculated fixedData is 01 FF 00
+Checking protocol "NECx1" (00 5A)
+Imported fixedData is 20 CC 47
+Imported device parms are: null null
+Calculated fixedData is 10 FF 00
+Checking protocol "NECx2" (00 5A)
+Imported fixedData is 20 CC 47
+Imported device parms are: null null
+Calculated fixedData is 11 FF 00
+Calculating default fixed data and command lengths
+Calculated: Fixed data length = 3, Command length = 1
+Using "NEC1" (00 5A)
+Decoding advanced codes
+Checking for Special Procotol Multiplex w/ PID=01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking for Special Procotol Pause w/ PID=01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+length=4
+getSpecialProtocol
+getSpecialProtocol: looking for 3/1010
+Checking Multiplex:01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking Pause:01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+in findDeviceUpgrade( 3, 1010 )
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+It's a match!
+length=4
+getSpecialProtocol
+getSpecialProtocol: looking for 3/1010
+Checking Multiplex:01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking Pause:01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+in findDeviceUpgrade( 3, 1010 )
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+It's a match!
+length=4
+getSpecialProtocol
+getSpecialProtocol: looking for 2/2000
+Checking Multiplex:01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking Pause:01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+in findDeviceUpgrade( 2, 2000 )
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+It's a match!
+length=4
+getSpecialProtocol
+getSpecialProtocol: looking for 2/2000
+Checking Multiplex:01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking Pause:01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+in findDeviceUpgrade( 2, 2000 )
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+It's a match!
+length=4
+getSpecialProtocol
+getSpecialProtocol: looking for 2/2000
+Checking Multiplex:01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking Pause:01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+in findDeviceUpgrade( 2, 2000 )
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+It's a match!
+length=4
+getSpecialProtocol
+getSpecialProtocol: looking for 2/2000
+Checking Multiplex:01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking Pause:01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+in findDeviceUpgrade( 2, 2000 )
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+It's a match!
+length=4
+getSpecialProtocol
+getSpecialProtocol: looking for 2/2000
+Checking Multiplex:01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking Pause:01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+in findDeviceUpgrade( 2, 2000 )
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+It's a match!
+length=3
+getSpecialProtocol
+getSpecialProtocol: looking for 1/250
+Checking Multiplex:01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking Pause:01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+in findDeviceUpgrade( 1, 250 )
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+length=3
+length=3
+length=4
+getSpecialProtocol
+getSpecialProtocol: looking for 3/1135
+Checking Multiplex:01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking Pause:01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+in findDeviceUpgrade( 3, 1135 )
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+It's a match!
+length=4
+getSpecialProtocol
+getSpecialProtocol: looking for 3/1135
+Checking Multiplex:01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking Pause:01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+in findDeviceUpgrade( 3, 1135 )
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+It's a match!
+length=4
+getSpecialProtocol
+getSpecialProtocol: looking for 3/1135
+Checking Multiplex:01 FE
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+Checking Pause:01 FB
+in getDeviceUpgrade
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+Checking DVD/1234 (null)
+No match found!
+in findDeviceUpgrade( 3, 1135 )
+Checking Cable/2004 (null)
+Checking CD/1010 (null)
+Checking DVD/2000 (null)
+Checking CD/1135 (null)
+It's a match!
+length=0
+Download error: -2
+java.util.concurrent.ExecutionException: java.lang.NegativeArraySizeException: -2
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at java.desktop/javax.swing.SwingWorker.get(SwingWorker.java:613)
+	at com.hifiremote.jp1.RemoteMaster$DownloadTask.done(RemoteMaster.java:988)
+	at java.desktop/javax.swing.SwingWorker$5.run(SwingWorker.java:750)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:847)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:857)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:310)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:242)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:316)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: java.lang.NegativeArraySizeException: -2
+	at com.hifiremote.jp1.Hex.subHex(Hex.java:947)
+	at com.hifiremote.jp1.Hex.subHex(Hex.java:917)
+	at com.hifiremote.jp1.Hex.subHex(Hex.java:903)
+	at com.hifiremote.jp1.KeyMove.<init>(KeyMove.java:27)
+	at com.hifiremote.jp1.AdvancedCode.read(AdvancedCode.java:126)
+	at com.hifiremote.jp1.RemoteConfiguration.decodeAdvancedCodes(RemoteConfiguration.java:4898)
+	at com.hifiremote.jp1.RemoteConfiguration.importIR(RemoteConfiguration.java:4178)
+	at com.hifiremote.jp1.RemoteConfiguration.parseData(RemoteConfiguration.java:4777)
+	at com.hifiremote.jp1.RemoteMaster$DownloadTask.doInBackground(RemoteMaster.java:972)
+	at com.hifiremote.jp1.RemoteMaster$DownloadTask.doInBackground(RemoteMaster.java:1)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:304)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:343)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+RemoteMaster.windowClosing() entered

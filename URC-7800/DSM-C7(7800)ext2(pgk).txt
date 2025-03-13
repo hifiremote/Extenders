@@ -1,0 +1,10 @@
+DSM-C7(7800)ext2(pgk).txt
+
+Upgrade code 0 = 1C 4F (TV/1103)				
+ FC 00 01				
+End
+
+Upgrade protocol 0 = 01 FC (S3C8+) DSM 7800 (PB v3.10) 
+00 00 01 08 61 0A 08 A6 62 00 EB 0D E6 62 01 18 
+03 97 10 63 09 61 E4 02 78 AF 
+End

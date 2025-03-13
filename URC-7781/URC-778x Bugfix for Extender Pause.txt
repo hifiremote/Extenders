@@ -1,0 +1,39 @@
+I regret that there is a bug in the Pause special protocol for the
+extenders for the URC-7780 and URC-7781 remotes.  The bug prevents
+the Pause protocol from working properly, even possibly causing the
+remote to crash, once any device upgrades have been added.
+
+To fix the bug, load your current setup into IR.exe, either from a
+saved file or by dowloading from the remote.  Go to the Protocols
+page and delete the protocol $01FB (highlight it in the left hand
+pane and press the Delete button at the bottom of the window).  Now
+add the debugged Pause protocol below.  To do this, press the Add
+button, paste the appropriate entry given below (all three lines,
+including the text) into the Add window just as if you were adding
+from RemoteMaster or KM, and then press OK.
+
+You should now have a replacement $01FB protocol in the left hand
+pane and the Pause special protocol should work correctly.  Save 
+this corrected setup and upload it to your remote.  
+
+This works with both extenders A1 and A2 and does not upset any
+settings of your remote.
+
+
+For the URC-7780 use this upgrade:
+
+Upgrade protocol 0 = 01 FB (HCS08) URC-7780 Debugged Pause (PB v4.01)	   
+ 20 04 00 00 02 00 CD EF EB B6 B5 4C BE B6 CC FF 9E	   
+End
+
+
+For the URC-7781 use this upgrade:
+
+Upgrade protocol 0 = 01 FB (HCS08) URC-7781 Debugged Pause (PB v4.01)	   
+ 20 04 00 00 02 00 CD F3 EB B6 B5 4C BE B6 CC FF 9E 	      
+End
+	 
+
+
+Graham Dixon (mathdon)
+27 January 2010

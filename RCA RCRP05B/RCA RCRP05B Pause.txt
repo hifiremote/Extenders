@@ -1,0 +1,24 @@
+Pause
+
+Normally we get the code from Remotemaster or Keymap Master.  This remote is an exception
+
+The Pause protocol that we usually use has a conflict in the RCA RCRP05B.  
+The protocol ID that we usually use, is used internally by the remote.  
+
+Copy this Device and paste it in the Device Tab
+
+
+Upgrade Code 0 = 08 00 (Cable/0000) (RM v2.00-preview7)
+ F0 00 01
+End
+
+
+Copy this Protocol and paste it in the Protocol Tab
+
+
+
+Upgrade protocol 0 = 01 F0 (S3F80) Pause Protocol (Special) (RM v2.00-preview7)
+ 00 00 01 28 03 C6 C0 00 00 0A FE 1A FC 2A FA AF
+End 
+
+

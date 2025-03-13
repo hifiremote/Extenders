@@ -1,0 +1,39 @@
+Converting URC-6440 files for use in OARUSBO4G
+==============================================
+[The following text has been copied or derived from posts by mathdon]
+
+
+To convert a setup for extender v1.03 or 1.04 of the URC-6440 to one for the corresponding extender of the OARUSB04G, and vice versa, follow these steps:
+
+1. Make sure you have a .rmir file for the setup you want to convert that has device upgrades for every setup code you are using. 
+If you do not have all these upgrades, 
+download the remote into RMIR (or load a .bin file of the setup) and use the "Create missing upgrades" button on the General tab to create any missing ones. 
+Then save the result as an .rmir file (NOT a .bin file).
+
+2. Edit the .rmir file with a text editor, replacing the [General] section at the top of the file with the corresponding [General] section from any .rmir file of the 
+extended target remote. For convenience, here are the sections concerned, for both remotes:
+
+[General]
+Remote.name=OARUSB04G Extender v1.04
+Remote.signature=2576A1
+Remote.sigData=12 ED 00 00 02 00 32 35 37 36 41 31 FF FF 01 04 FF FF FF FF FF FF 80 15 06 E7 FF FF FF FF FF FF FF 80 09 FF FF FF FF FF 02 00 07 00 00 06 00 00 00 4A 00 00 00 E6 00 00 00 E8 00 00 01 D8 00 00
+Notes=
+
+[General]
+Remote.name=URC-6440 Extender v1.04
+Remote.signature=2570A1
+Remote.sigData=14 EB 00 00 02 00 32 35 37 30 41 31 FF FF 01 04 FF FF FF FF FF FF 80 15 06 E7 FF FF FF FF FF FF FF 80 09 FF FF FF FF FF 02 00 07 00 00 06 00 00 00 4A 00 00 00 E6 00 00 00 E8 00 00 01 D8 00 00
+Notes=
+
+3. Save the edited .rmir file (preferably with a different name) and load it into RMIR. The raw hex data will be re-created as required for the target remote, so after loading it,
+you must save it, overwriting the edited file so that you now have a .rmir file properly constructed for the target remote.
+
+Once you have installed the extender in the target remote, you may now load this .rmir file into it. 
+In the OARUSB04G you should now have a setup which is functionally equivalent to the setup of your URC-6440, or vice versa.
+
+For URC6440 the TV device button blinking is normal with the original settings.bin file and with the extender reset file, as both are "factory resets" in which the region has not been set.
+It should not happen in a working setup. 
+In an URC6440 .bin file converted from OARUSB04G you can put it right by setting the region (holding down #1), downloading the remote to RMIR and saving it as a .rmir file. 
+That file should not give the blinks when re-loaded to the remote. You will lose names of functions etc that you may want to preserve, so copy the [Buffer] section of the .rmir file 
+(i.e. the hex listing) from the newly saved file to (a copy of) the working setup with the problem. Load that hybrid file to RMIR and save it. I think you should find that all is well 
+when you load that to the remote. 
